@@ -1,0 +1,185 @@
+{
+  "ver": 1,
+  "desc": {
+    "0": {
+      "name": "Android.Benign",
+      "desc": {
+        "zh": "良性",
+        "en": "Benign app"
+      },
+      "cat": {
+        "zh": "正常",
+        "en": "Benign"
+      },
+      "score": 0
+    },
+    "800": {
+      "name": "Android.Malware.General",
+      "desc": {
+        "zh": "应用可能包含恶意代码, 例如文件或系统损坏或开启后门",
+        "en": "This app could cause multiple issues like files and system damages or creates backdoor"
+      },
+      "cat": {
+        "zh": "流氓行为",
+        "en": "Rogue"
+      },
+      "score": 8
+    },
+    "801": {
+      "name": "Android.Malware.Trojan",
+      "desc": {
+        "zh": "应用为木马, 控制者可能通过远程C2C服务器发送指令远程控制系统",
+        "en": "This app could control your device through a C2C server"
+      },
+      "cat": {
+        "zh": "远程控制",
+        "en": "Remote"
+      },
+      "score": 8
+    },
+    "802": {
+      "name": "Android.Malware.Worm",
+      "desc": {
+        "zh": "应用为蠕虫, 可能会造成系统损害并尝试散播到其他装置",
+        "en": "This app damages system and tries to replicate itself to other devices"
+      },
+      "cat": {
+        "zh": "恶意传播",
+        "en": "Spread"
+      },
+      "score": 8
+    },
+    "803": {
+      "name": "Android.Malware.Ransomware",
+      "desc": {
+        "zh": "应用为勒索软件，加密文件系统或锁屏阻止用户使用直到用户付款",
+        "en": "This app encrypt the file system or block the user using the system until the ransom is paid"
+      },
+      "cat": {
+        "zh": "诱骗欺诈",
+        "en": "Fraud"
+      },
+      "score": 8
+    },
+    "804": {
+      "name": "Android.Malware.Backdoor",
+      "desc": {
+        "zh": "应用包含后门使用户系统被远程控制，执行系统命令",
+        "en": "This app contains backdoor that let your device being controlled remotely"
+      },
+      "cat": {
+        "zh": "远程控制",
+        "en": "Remote"
+      },
+      "score": 8
+    },
+    "805": {
+      "name": "Android.Malware.Spyware",
+      "desc": {
+        "zh": "应用可能在后台窃取用户私密信息",
+        "en": "This app may steal user personal information"
+      },
+      "cat": {
+        "zh": "隐私窃取",
+        "en": "Privacy"
+      },
+      "score": 8
+    },
+    "600": {
+      "name": "Android.PUA.General",
+      "desc": {
+        "zh": "应用可能包含收集用户信息, 扰人广告或引诱付费等行为",
+        "en": "This app may contain various unwanted behaviors"
+      },
+      "cat": {
+        "zh": "流氓行为",
+        "en": "Rogue"
+      },
+      "score": 6
+    },
+    "601": {
+      "name": "Android.PUA.Riskware",
+      "desc": {
+        "zh": "应用提供的功能可能会对用户造成非预期的影响",
+        "en": "The features of the app may have potential risks"
+      },
+      "cat": {
+        "zh": "流氓行为",
+        "en": "Rogue"
+      },
+      "score": 6
+    },
+    "602": {
+      "name": "Android.PUA.Tool",
+      "desc": {
+        "zh": "应用为root工具, 可能root系统并取得最高权限",
+        "en": "This is app will root your system and get root permission"
+      },
+      "cat": {
+        "zh": "系统破坏",
+        "en": "System"
+      },
+      "score": 6
+    },
+    "603": {
+      "name": "Android.PUA.Spyware",
+      "desc": {
+        "zh": "应用可能在后台收集用户信息",
+        "en": "This app may collect user information"
+      },
+      "cat": {
+        "zh": "隐私窃取",
+        "en": "Privacy"
+      },
+      "score": 6
+    },
+    "604": {
+      "name": "Android.PUA.Hacktool",
+      "desc": {
+        "zh": "应用为黑客工具, 黑客可能透过此应用发起攻击",
+        "en": "This app is a hacktool that allows the hacker to attack your system"
+      },
+      "cat": {
+        "zh": "系统破坏",
+        "en": "System"
+      },
+      "score": 6
+    },
+    "605": {
+      "name": "Android.PUA.Payware",
+      "desc": {
+        "zh": "应用可能未经受权的情况下向用户收费",
+        "en": "This app may charge user without consent"
+      },
+      "cat": {
+        "zh": "恶意扣费",
+        "en": "Payment"
+      },
+      "score": 6
+    },
+    "606": {
+      "name": "Android.PUA.Adware",
+      "desc": {
+        "zh": "该应用会在未经受权的情况下恶意推送大量广告而影响正常功能体验",
+        "en": "This app shows irritating ad frequently"
+      },
+      "cat": {
+        "zh": "资费消耗",
+        "en": "Expense"
+      },
+      "score": 6
+    },
+    "-1": {
+      "name": "Unknown",
+      "desc": {
+        "zh": "暂无描述",
+        "en": "No description for this family"
+      },
+      "cat": {
+        "zh": "暂无描述",
+        "en": "Unknown"
+      },
+      "score": 0
+    }
+  }
+}

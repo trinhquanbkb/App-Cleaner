@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting.SettingActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:paddingTop="15dp"
+            android:id="@+id/imageView15"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/setting_left_arrow" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginTop="12dp"
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:text="Thiết lập" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line_setting" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:src="@drawable/setting_rules" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:text="Điều khoản dịch vụ"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:src="@drawable/setting_right_arrow" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view4"
+        android:layout_width="360dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line_setting" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:src="@drawable/setting_lock" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:text="Chính sách quyền riêng tư"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:src="@drawable/setting_right_arrow" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_width="360dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line_setting" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:src="@drawable/setting_information" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:text="Giới thiệu"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:src="@drawable/setting_right_arrow" />
+    </LinearLayout>
+
+</LinearLayout>

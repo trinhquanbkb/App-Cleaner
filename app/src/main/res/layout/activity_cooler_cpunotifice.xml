@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoolerCPU.CoolerCPUNotifice">
+    
+    <LinearLayout
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#0F7AD1"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_marginTop="13dp"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/au" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="116dp"
+                android:layout_height="57dp"
+                android:layout_weight="1"
+                android:src="@drawable/success_grey"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="9">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20dp"
+                    android:textFontWeight="@integer/material_motion_duration_medium_2"
+                    android:text="Đã làm mát CPU xong"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="giải phóng hiệu suất mạnh mẽ hơn"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
