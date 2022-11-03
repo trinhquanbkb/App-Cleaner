@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CleanRubbish.CleanRubbishRun"
+    android:background="#0E558E">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="200dp">
+
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/quet_rac_img_7"/>
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:onClick="click0"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/quet_rac_img_6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:onClick="eddy"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/quet_rac_img_8"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                    app:layout_constraintHorizontal_bias="0.48"
+                    app:layout_constraintStart_toStartOf="@+id/imageView36"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/quet_rac_img_9"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                    app:layout_constraintStart_toStartOf="@+id/imageView36"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                    app:layout_constraintStart_toStartOf="@+id/imageView36"
+                    app:layout_constraintTop_toTopOf="@+id/imageView36" >
+                    <ImageView
+                        android:id="@+id/imageView42"
+                        android:onClick="click1"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="50dp"/>
+                    <ImageView
+                        android:id="@+id/imageView43"
+                        android:onClick="click2"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="100dp"/>
+                    <ImageView
+                        android:id="@+id/imageView44"
+                        android:onClick="click3"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="150dp"/>
+                    <ImageView
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="65dp"
+                        android:id="@+id/imageView40"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/quet_rac_img_5" />
+
+                    <ImageView
+                        android:id="@+id/imageView41"
+                        android:onClick="click4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="125dp"
+                        android:layout_marginLeft="105dp"/>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

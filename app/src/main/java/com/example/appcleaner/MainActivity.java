@@ -9,6 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
+import com.example.appcleaner.CleanRubbish.CleanRubbishRun;
 import com.example.appcleaner.CoolerCPU.CoolerCPU;
 import com.example.appcleaner.Setting.SettingActivity;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         clickSetting();
         clickCPU(findViewById(R.id.imageView9));
         clickCPU(findViewById(R.id.textView4));
+        clickBroom();
     }
 
     public void homeHeaderImg0Twirl(View view) {
@@ -54,6 +56,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, CoolerCPU.class);
+                startActivity(intent);
+            }
+        });
+    }
+    public void clickBroom(){
+        ImageView imageView = findViewById(R.id.imageView5);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, CleanRubbishRun.class);
                 startActivity(intent);
             }
         });

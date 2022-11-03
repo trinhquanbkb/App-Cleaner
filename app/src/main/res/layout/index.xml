@@ -23,7 +23,7 @@
 
                 <TextView
                     android:paddingLeft="20dp"
-                    android:paddingTop="10dp"
+                    android:paddingTop="14dp"
                     android:id="@+id/textView"
                     android:textSize="20dp"
                     android:layout_width="wrap_content"
@@ -36,8 +36,8 @@
                     android:paddingTop="17dp"
                     android:paddingLeft="10dp"
                     android:id="@+id/imageView"
-                    android:layout_width="20dp"
-                    android:layout_height="35dp"
+                    android:layout_width="28dp"
+                    android:layout_height="40dp"
                     android:layout_weight="1"
                     android:src="@drawable/g" />
             </LinearLayout>
@@ -91,31 +91,22 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.333" />
-
-<!--                    <ImageView-->
-<!--                        android:onClick="homeHeaderImg1Twirl"-->
-<!--                        android:id="@+id/imageView6"-->
-<!--                        android:layout_width="80dp"-->
-<!--                        android:layout_height="80dp"-->
-<!--                        android:layout_marginRight="81dp"-->
-<!--                        android:layout_marginBottom="75dp"-->
-<!--                        android:src="@drawable/home_header_img_1"-->
-<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                        app:layout_constraintEnd_toEndOf="parent"-->
-<!--                        app:layout_constraintHorizontal_bias="0.481"-->
-<!--                        app:layout_constraintStart_toStartOf="parent"-->
-<!--                        app:layout_constraintTop_toTopOf="parent"-->
-<!--                        app:layout_constraintVertical_bias="0.333" />-->
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
                 <Button
-                    android:layout_marginTop="30dp"
                     android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:shadowRadius="50"
+                    android:src="@drawable/shape_rectangle1"
                     android:text="DỌN DẸP"
-                    android:textSize="20dp"
                     android:textColor="#EDEEEF"
-                    android:background="@drawable/shape_rectangle1"/>
+                    android:textSize="20dp"
+                    app:backgroundTint="#3149D1"
+                    app:cornerRadius="50dp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="20dp"
@@ -124,7 +115,7 @@
                 android:orientation="horizontal">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="8dp"
@@ -136,7 +127,7 @@
                         android:id="@+id/imageView7"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/bin"/>
 
                     <TextView
@@ -145,12 +136,11 @@
                         android:layout_height="wrap_content"
                         android:text="Dọn dẹp tệp tin rác"
                         android:textColor="#E3D9D9"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textSize="16dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     android:layout_marginRight="15dp"
                     android:layout_marginLeft="8dp"
@@ -162,7 +152,7 @@
                         android:id="@+id/imageView8"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/rocket" />
 
                     <TextView
@@ -171,8 +161,7 @@
                         android:layout_height="wrap_content"
                         android:text="Tăng tốc điện thoại"
                         android:textColor="#E3D9D9"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textSize="16dp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -185,7 +174,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="8dp"
@@ -195,7 +184,7 @@
                         android:id="@+id/imageView9"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/snowflake" />
 
                     <TextView
@@ -204,14 +193,13 @@
                         android:layout_height="wrap_content"
                         android:text="Dọn dẹp tệp tin rác"
                         android:textColor="#E3D9D9"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textSize="16dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     android:layout_marginRight="15dp"
                     android:layout_marginLeft="8dp"
@@ -221,7 +209,7 @@
                         android:id="@+id/imageView10"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/battery" />
 
                     <TextView
@@ -230,8 +218,7 @@
                         android:layout_height="wrap_content"
                         android:text="Tăng tốc điện thoại"
                         android:textColor="#E3D9D9"
-                        android:textSize="16dp"
-                        android:textStyle="bold"/>
+                        android:textSize="16dp" />
                 </LinearLayout>
             </LinearLayout>
             <TextView
@@ -246,6 +233,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_more_tools"
@@ -272,7 +260,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Bảo mật Wifi"
                         android:textColor="@color/cardview_light_background"
-                        android:textSize="17dp" />
+                        android:textSize="15dp" />
 
                     <ImageView
                         android:layout_weight="1"
@@ -313,7 +301,7 @@
                         android:layout_weight="4"
                         android:layout_marginTop="5dp"
                         android:textColor="@color/cardview_light_background"
-                        android:textSize="17dp"
+                        android:textSize="15dp"
                         android:layout_marginLeft="2dp" />
 
                     <ImageView
