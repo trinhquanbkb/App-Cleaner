@@ -26,7 +26,7 @@ public class CoolerCPUComplete extends AppCompatActivity {
                     intent.setClass(CoolerCPUComplete.this, CoolerCPUNotifice.class);
                     startActivity(intent);
                 }
-            },2500);
+            },2000);
         }catch (Exception e){
             new Exception("Error Thread in CPU complete: "+e);
         }

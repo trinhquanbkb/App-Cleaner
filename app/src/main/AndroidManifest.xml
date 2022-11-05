@@ -15,6 +15,34 @@
         android:theme="@style/HiddenTitleTheme"
         tools:targetApi="31">
         <activity
+            android:name=".WifiScan.WifiScanNotifce"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WifiScan.WifiScanComplete"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WifiScan.WifiScanRun"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CleanRubbish.CleanRubbishDeleteFile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CleanRubbish.CleanRubbishFile"
             android:exported="false">
             <meta-data

@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CleanRubbish.CleanRubbishFile"
+    tools:context=".CleanRubbish.CleanRubbishDeleteFile"
     android:orientation="vertical"
     android:gravity="center">
-
     <ScrollView
         android:background="@drawable/background_clean_rubbish"
         android:layout_width="match_parent"

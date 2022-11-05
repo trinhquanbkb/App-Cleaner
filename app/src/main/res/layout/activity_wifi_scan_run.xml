@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiScan.WifiScanRun"
+    android:orientation="vertical"
+    android:background="#0E558E"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:src="@drawable/arrow_left_2"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="Bảo mật WiFi"
+                    android:textColor="@color/design_default_color_on_primary"
+                    android:textSize="21dp"
+                    android:textAlignment="center"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView51"
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/wifiscan_img_6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView52"
+                        android:layout_width="213dp"
+                        android:layout_height="213dp"
+                        android:src="@drawable/wifiscan_img_5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView53"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/wifiscan_img_4"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView51"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView51"
+                        app:layout_constraintStart_toStartOf="@+id/imageView51"
+                        app:layout_constraintTop_toTopOf="@+id/imageView51" />
+
+                    <ImageView
+                        android:id="@+id/imageView57"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:src="@drawable/wifiscan_img_3"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView51"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView51"
+                        app:layout_constraintStart_toStartOf="@+id/imageView51"
+                        app:layout_constraintTop_toTopOf="@+id/imageView51" />
+
+                    <ImageView
+                        android:id="@+id/imageView58"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/wifiscan_img_7"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView51"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView51"
+                        app:layout_constraintStart_toStartOf="@+id/imageView51"
+                        app:layout_constraintTop_toTopOf="@+id/imageView51" />
+
+                    <ImageView
+                        android:id="@+id/imageView54"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/wifiscan_img_0"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                        app:layout_constraintHorizontal_bias="0.495"
+                        app:layout_constraintStart_toStartOf="@+id/imageView57"
+                        app:layout_constraintTop_toTopOf="@+id/imageView57"
+                        app:layout_constraintVertical_bias="0.6" />
+
+                    <ImageView
+                        android:id="@+id/imageView55"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/wifiscan_img_1"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="@+id/imageView57"
+                        app:layout_constraintTop_toTopOf="@+id/imageView57"
+                        app:layout_constraintVertical_bias="0.463" />
+
+                    <ImageView
+                        android:id="@+id/imageView56"
+                        android:layout_width="55dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/wifiscan_img_2"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView57"
+                        app:layout_constraintHorizontal_bias="0.488"
+                        app:layout_constraintStart_toStartOf="@+id/imageView57"
+                        app:layout_constraintTop_toTopOf="@+id/imageView57"
+                        app:layout_constraintVertical_bias="0.175" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="90dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quét xác thực Wifi ..."
+                        android:textColor="@color/design_default_color_on_primary"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wifiscan_img_8"></ImageView>
+                        <ImageView
+                            android:id="@+id/imageView59"
+                            android:layout_width="30dp"
+                            android:layout_height="4dp"
+                            android:src="@drawable/line_thang"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="120dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do Trustlook cung cấp"
+                android:textColor="#CABABA"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

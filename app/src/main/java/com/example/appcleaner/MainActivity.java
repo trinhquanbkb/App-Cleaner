@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import com.example.appcleaner.CleanRubbish.CleanRubbishRun;
 import com.example.appcleaner.CoolerCPU.CoolerCPU;
 import com.example.appcleaner.Setting.SettingActivity;
+import com.example.appcleaner.WifiScan.WifiScanRun;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,10 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.index);
         homeHeaderImg0Twirl(findViewById(R.id.imageView2));
         broom(findViewById(R.id.imageView5));
-        clickSetting();
-        clickCPU(findViewById(R.id.imageView9));
-        clickCPU(findViewById(R.id.textView4));
-        clickBroom();
+        allClick();
     }
 
     public void homeHeaderImg0Twirl(View view) {
@@ -70,5 +68,36 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void clickButtonClean(View view){
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, CleanRubbishRun.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void clickWifiScan(View view){
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, WifiScanRun.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void allClick(){
+        clickSetting();
+        clickCPU(findViewById(R.id.linearLayout2));
+        clickBroom();
+        clickButtonClean(findViewById(R.id.button));
+        clickButtonClean(findViewById(R.id.linearLayout1));
+        clickWifiScan(findViewById(R.id.linearLayout3));
     }
 }
