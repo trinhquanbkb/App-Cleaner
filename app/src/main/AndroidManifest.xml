@@ -15,6 +15,27 @@
         android:theme="@style/HiddenTitleTheme"
         tools:targetApi="31">
         <activity
+            android:name=".PrivateInfor.PrivateInforNotifice"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PrivateInfor.PrivateInforComplete"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PrivateInfor.PrivateInforRun"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".WifiScan.WifiScanNotifce"
             android:exported="false">
             <meta-data

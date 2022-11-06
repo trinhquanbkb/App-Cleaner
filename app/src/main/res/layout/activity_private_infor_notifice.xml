@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CoolerCPU.CoolerCPUNotifice">
-    
+    tools:context=".PrivateInfor.PrivateInforNotifice">
     <LinearLayout
-    android:orientation="vertical"
-    android:weightSum="10"
-    android:background="#0F7AD1"
-    android:layout_width="match_parent"
-    android:layout_height="160dp">
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="#0F7AD1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +45,7 @@
                 android:src="@drawable/success_grey"></ImageView>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -58,14 +57,7 @@
                     android:textColor="@color/cardview_light_background"
                     android:textSize="20dp"
                     android:textFontWeight="@integer/material_motion_duration_medium_2"
-                    android:text="Đã làm mát CPU xong"></TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="10dp"
-                    android:textColor="@color/cardview_light_background"
-                    android:text="giải phóng hiệu suất mạnh mẽ hơn"></TextView>
+                    android:text="Đã dọn dẹp hồ sơ riêng tư"></TextView>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

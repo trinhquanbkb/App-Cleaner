@@ -277,11 +277,13 @@
 
                 <View
                     android:id="@+id/view2"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="292dp"
+                    android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
                     android:background="@drawable/line_more_tools" />
                 <LinearLayout
                     android:id="@+id/linearLayout4"

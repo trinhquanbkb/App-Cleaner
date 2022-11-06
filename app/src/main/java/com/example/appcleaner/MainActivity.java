@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.example.appcleaner.CleanRubbish.CleanRubbishRun;
 import com.example.appcleaner.CoolerCPU.CoolerCPU;
+import com.example.appcleaner.PrivateInfor.PrivateInforRun;
 import com.example.appcleaner.Setting.SettingActivity;
 import com.example.appcleaner.WifiScan.WifiScanRun;
 
@@ -92,6 +93,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void clickPrivateInfor(View view){
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, PrivateInforRun.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     public void allClick(){
         clickSetting();
         clickCPU(findViewById(R.id.linearLayout2));
@@ -99,5 +111,6 @@ public class MainActivity extends AppCompatActivity {
         clickButtonClean(findViewById(R.id.button));
         clickButtonClean(findViewById(R.id.linearLayout1));
         clickWifiScan(findViewById(R.id.linearLayout3));
+        clickPrivateInfor(findViewById(R.id.linearLayout4));
     }
 }
