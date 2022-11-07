@@ -15,6 +15,34 @@
         android:theme="@style/HiddenTitleTheme"
         tools:targetApi="31">
         <activity
+            android:name=".SavePin.SavePinNotifice"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SavePin.SavePinComplete"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SavePin.SavePinRada"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SavePin.SavePinRun"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PrivateInfor.PrivateInforNotifice"
             android:exported="false">
             <meta-data

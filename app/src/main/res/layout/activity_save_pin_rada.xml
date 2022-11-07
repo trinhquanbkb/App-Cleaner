@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavePin.SavePinRada"
+    android:background="#0E558E"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/rada_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:onClick="rada"
+                    android:src="@drawable/rada_image_xoay"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView31"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView31"
+                    app:layout_constraintTop_toTopOf="@+id/imageView31" />
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView31"
+                    app:layout_constraintStart_toStartOf="@+id/imageView31"
+                    app:layout_constraintTop_toTopOf="@+id/imageView31" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/cardview_light_background"
+                android:text="Đang tối ưu hóa pin ..."/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavePin.SavePinRun"
+    android:orientation="vertical"
+    android:background="#0E558E"
+    android:gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView70"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/save_pin_img_7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView71"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/save_pin_img_8"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintHorizontal_bias="0.48"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70" />
+
+                <ImageView
+                    android:id="@+id/imageView76"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/save_pin_img_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintHorizontal_bias="0.739"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"
+                    app:layout_constraintVertical_bias="0.239" />
+
+                <ImageView
+                    android:id="@+id/imageView77"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/save_pin_img_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintHorizontal_bias="0.222"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"
+                    app:layout_constraintVertical_bias="0.36" />
+
+                <ImageView
+                    android:id="@+id/imageView78"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/save_pin_img_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintHorizontal_bias="0.795"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"
+                    app:layout_constraintVertical_bias="0.804" />
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/save_pin_img_5"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"/>
+
+                <ImageView
+                    android:id="@+id/imageView72"
+                    android:layout_width="225dp"
+                    android:layout_height="225dp"
+                    android:src="@drawable/save_pin_img_6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/save_pin_img_4"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"/>
+
+                <ImageView
+                    android:id="@+id/imageView73"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:src="@drawable/save_pin_img_3"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"/>
+
+                <ImageView
+                    android:id="@+id/imageView75"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/save_pin_img_0"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"/>
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/save_pin_img_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="@+id/imageView70"
+                    app:layout_constraintTop_toTopOf="@+id/imageView70"
+                    app:layout_constraintVertical_bias="0.635" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đang tối ưu hóa pin ..."
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:layout_marginTop="90dp"
+                android:textColor="@color/design_default_color_on_primary"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

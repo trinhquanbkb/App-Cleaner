@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WifiScan.WifiScanNotifce">
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
         <LinearLayout
             android:orientation="vertical"
             android:weightSum="10"
@@ -33,7 +31,7 @@
                     android:layout_weight="8"></TextView>
             </LinearLayout>
             <LinearLayout
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

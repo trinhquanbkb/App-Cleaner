@@ -1,28 +1,28 @@
-package com.example.appcleaner.CoolerCPU;
+package com.example.appcleaner.SavePin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
+import com.example.appcleaner.CoolerCPU.CoolerCPUComplete;
+import com.example.appcleaner.CoolerCPU.CoolerCPURada;
 import com.example.appcleaner.R;
 
-public class CoolerCPURada extends AppCompatActivity {
-    private int count = 0;
+public class SavePinRada extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cooler_cpurada);
-        rada(findViewById(R.id.imageView32));
+        setContentView(R.layout.activity_save_pin_rada);
         transferCompleteCPU();
+        rada(findViewById(R.id.imageView32));
     }
 
     public void rada(View view) {
@@ -35,7 +35,7 @@ public class CoolerCPURada extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent();
-                intent.setClass(CoolerCPURada.this, CoolerCPUComplete.class);
+                intent.setClass(SavePinRada.this, SavePinComplete.class);
                 startActivity(intent);
             }
         }, 6000);
