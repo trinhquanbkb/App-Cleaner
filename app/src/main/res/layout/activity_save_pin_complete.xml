@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SavePin.SavePinComplete"
+    tools:context=".Acitvity.SavePin.SavePinComplete"
     android:background="#FEFEFE"
     android:orientation="vertical"
     android:gravity="center">

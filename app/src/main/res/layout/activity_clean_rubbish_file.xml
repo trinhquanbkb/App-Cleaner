@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CleanRubbish.CleanRubbishFile"
+    tools:context=".Acitvity.CleanRubbish.CleanRubbishFile"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -232,12 +232,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="10"
                 android:gravity="center">
                 <Button
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:id="@+id/button1"
-                    android:layout_weight="6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ĐANG QUÉT CHƯƠNG TRÌNH ĐANG CHẠY..."
                     app:backgroundTint="#005EDE" />

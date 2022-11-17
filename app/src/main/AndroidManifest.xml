@@ -15,147 +15,175 @@
         android:theme="@style/HiddenTitleTheme"
         tools:targetApi="31">
         <activity
-            android:name=".SavePin.SavePinNotifice"
+            android:name=".Acitvity.Booster.BoosterNotifice"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SavePin.SavePinComplete"
+            android:name=".Acitvity.Booster.BoosterComplete"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SavePin.SavePinRada"
+            android:name=".Acitvity.Booster.BoosterClear"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SavePin.SavePinRun"
+            android:name=".Acitvity.Booster.BoosterRun"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PrivateInfor.PrivateInforNotifice"
+            android:name=".Acitvity.SavePin.SavePinNotifice"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PrivateInfor.PrivateInforComplete"
+            android:name=".Acitvity.SavePin.SavePinComplete"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PrivateInfor.PrivateInforRun"
+            android:name=".Acitvity.SavePin.SavePinRada"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".WifiScan.WifiScanNotifce"
+            android:name=".Acitvity.SavePin.SavePinRun"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".WifiScan.WifiScanComplete"
+            android:name=".Acitvity.PrivateInfor.PrivateInforNotifice"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".WifiScan.WifiScanRun"
+            android:name=".Acitvity.PrivateInfor.PrivateInforComplete"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CleanRubbish.CleanRubbishDeleteFile"
+            android:name=".Acitvity.PrivateInfor.PrivateInforRun"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CleanRubbish.CleanRubbishFile"
+            android:name=".Acitvity.WifiScan.WifiScanNotifce"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CleanRubbish.CleanRubbishRun"
+            android:name=".Acitvity.WifiScan.WifiScanComplete"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CoolerCPU.CoolerCPUNotifice"
+            android:name=".Acitvity.WifiScan.WifiScanRun"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CoolerCPU.CoolerCPUComplete"
+            android:name=".Acitvity.CleanRubbish.CleanRubbishDeleteFile"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CoolerCPU.CoolerCPURada"
+            android:name=".Acitvity.CleanRubbish.CleanRubbishFile"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CoolerCPU.CoolerCPU"
+            android:name=".Acitvity.CleanRubbish.CleanRubbishRun"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Setting.SettingRules"
+            android:name=".Acitvity.CoolerCPU.CoolerCPUNotifice"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Setting.SettingPrivate"
+            android:name=".Acitvity.CoolerCPU.CoolerCPUComplete"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Setting.SettingIntroduce"
+            android:name=".Acitvity.CoolerCPU.CoolerCPURada"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Setting.SettingActivity"
+            android:name=".Acitvity.CoolerCPU.CoolerCPU"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Acitvity.Setting.SettingRules"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Acitvity.Setting.SettingPrivate"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Acitvity.Setting.SettingIntroduce"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Acitvity.Setting.SettingActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

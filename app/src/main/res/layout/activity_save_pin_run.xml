@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SavePin.SavePinRun"
+    tools:context=".Acitvity.SavePin.SavePinRun"
     android:orientation="vertical"
     android:background="#0E558E"
     android:gravity="center">
@@ -12,9 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="100dp"
             android:orientation="vertical"
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <androidx.constraintlayout.widget.ConstraintLayout

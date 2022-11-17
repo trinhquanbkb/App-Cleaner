@@ -1,6 +1,8 @@
 package com.example.appcleaner;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,12 +11,13 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
-import com.example.appcleaner.CleanRubbish.CleanRubbishRun;
-import com.example.appcleaner.CoolerCPU.CoolerCPU;
-import com.example.appcleaner.PrivateInfor.PrivateInforRun;
-import com.example.appcleaner.SavePin.SavePinRun;
-import com.example.appcleaner.Setting.SettingActivity;
-import com.example.appcleaner.WifiScan.WifiScanRun;
+import com.example.appcleaner.Acitvity.Booster.BoosterRun;
+import com.example.appcleaner.Acitvity.CleanRubbish.CleanRubbishRun;
+import com.example.appcleaner.Acitvity.CoolerCPU.CoolerCPU;
+import com.example.appcleaner.Acitvity.PrivateInfor.PrivateInforRun;
+import com.example.appcleaner.Acitvity.SavePin.SavePinRun;
+import com.example.appcleaner.Acitvity.Setting.SettingActivity;
+import com.example.appcleaner.Acitvity.WifiScan.WifiScanRun;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -116,6 +119,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void clickBoost(View view){
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, BoosterRun.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     public void allClick(){
         clickSetting();
         clickCPU(findViewById(R.id.linearLayout2));
@@ -125,5 +139,6 @@ public class MainActivity extends AppCompatActivity {
         clickWifiScan(findViewById(R.id.linearLayout3));
         clickPrivateInfor(findViewById(R.id.linearLayout4));
         clickSavePower(findViewById(R.id.tietkiempin));
+        clickBoost(findViewById(R.id.tangtocdienthoai));
     }
 }
