@@ -5,83 +5,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Acitvity.CleanRubbish.CleanRubbishFile"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:background="@drawable/background_clean_rubbish"
+    android:configChanges="orientation|screenSize|keyboard"
+    android:orientation="vertical">
 
-    <ScrollView
-        android:background="@drawable/background_clean_rubbish"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="660dp"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:weightSum="12">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Tăng tốc điện thoại"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="20dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="-10dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <ImageView
+                android:id="@+id/imageView46"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/broom"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+                app:layout_constraintEnd_toEndOf="@+id/imageView45"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/imageView45"
+                app:layout_constraintTop_toTopOf="@+id/imageView45"
+                app:layout_constraintVertical_bias="0.2"></ImageView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
             <TextView
+                android:id="@+id/textViewRun"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Dọn dẹp tệp tin rác"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:layout_weight="1"
-                android:textColor="@color/design_default_color_on_primary"/>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_marginTop="20dp"
-                android:layout_weight="2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imageView45"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/circle"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"></ImageView>
-
-                <ImageView
-                    android:id="@+id/imageView46"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/broom"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView45"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView45"
-                    app:layout_constraintHorizontal_bias="0.45"
-                    app:layout_constraintStart_toStartOf="@+id/imageView45"
-                    app:layout_constraintTop_toTopOf="@+id/imageView45"
-                    app:layout_constraintVertical_bias="0.2"></ImageView>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <TextView
-                android:layout_weight="1"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
+                android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
+                android:text="Đang quét điện thoại..."
+                android:textAlignment="center"
                 android:textColor="@color/design_default_color_on_primary"
-                android:text="Đang quét điện thoại..."/>
-            <LinearLayout
-                android:layout_marginTop="100dp"
-                android:layout_weight="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textViewchange1"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/design_default_color_on_primary" />
+            <EditText
+                android:id="@+id/editTextGB"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="22dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_weight="7.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="10"
                 android:orientation="vertical">
-                <LinearLayout
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+                <LinearLayout
+                    android:layout_weight="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:orientation="horizontal"
                     android:weightSum="10">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="3" />
+                        android:layout_weight="1" />
                     <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <TextView
                             android:textAlignment="textStart"
@@ -97,32 +141,65 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/imageView47"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/imageViewComplete1"
                         android:onClick="check1"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_weight="1" />
+                        android:layout_width="2dp"
+                        android:layout_height="18dp"
+                        android:layout_weight="0.5" />
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="22dp"
+                    android:id="@+id/viewHide"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
                     android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="22dp"
+                    android:layout_height="0dp"
                     android:background="@drawable/line_setting" />
-                <LinearLayout
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ScrollView
+                    android:paddingBottom="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewItem1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="10"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+                <LinearLayout
+                    android:layout_weight="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:orientation="horizontal"
                     android:weightSum="10">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="3" />
+                        android:layout_weight="1" />
                     <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <TextView
                             android:textAlignment="textStart"
@@ -138,39 +215,53 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/imageView48"
-                        android:onClick="check2"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_weight="1" />
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/imageViewComplete2"
+                        android:onClick="check1"
+                        android:layout_width="2dp"
+                        android:layout_height="18dp"
+                        android:layout_weight="0.5" />
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="22dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="22dp"
+                    android:layout_height="0dp"
                     android:background="@drawable/line_setting" />
-                <LinearLayout
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="10"
+                android:orientation="vertical">
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+                <LinearLayout
+                    android:layout_weight="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:orientation="horizontal"
                     android:weightSum="10">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="3" />
+                        android:layout_weight="1" />
                     <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <TextView
                             android:textAlignment="textStart"
                             android:textSize="17dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tệp tin tạm thời"/>
+                            android:text="Tập tin tạm thời"/>
                         <ImageView
                             android:paddingTop="5dp"
                             android:layout_width="40dp"
@@ -179,32 +270,46 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/imageView49"
-                        android:onClick="check3"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_weight="1"/>
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/imageViewComplete3"
+                        android:onClick="check1"
+                        android:layout_width="2dp"
+                        android:layout_height="18dp"
+                        android:layout_weight="0.5" />
                 </LinearLayout>
                 <View
-                    android:layout_marginTop="22dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="22dp"
+                    android:layout_height="0dp"
                     android:background="@drawable/line_setting" />
-                <LinearLayout
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="10"
+                android:orientation="vertical">
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+                <LinearLayout
+                    android:layout_weight="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:orientation="horizontal"
                     android:weightSum="10">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="3" />
+                        android:layout_weight="1" />
                     <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <TextView
                             android:textAlignment="textStart"
@@ -220,28 +325,39 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/imageView50"
-                        android:onClick="check4"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_weight="1"/>
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/imageViewComplete4"
+                        android:onClick="check1"
+                        android:layout_width="2dp"
+                        android:layout_height="18dp"
+                        android:layout_weight="0.5" />
                 </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginTop="100dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-                <Button
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:id="@+id/button1"
+                <View
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ĐANG QUÉT CHƯƠNG TRÌNH ĐANG CHẠY..."
-                    app:backgroundTint="#005EDE" />
+                    android:layout_height="0dp"
+                    android:background="@drawable/line_setting" />
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="DỌN DẸP CHƯƠNG TRÌNH ĐANG CHẠY..."
+            app:backgroundTint="#005EDE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

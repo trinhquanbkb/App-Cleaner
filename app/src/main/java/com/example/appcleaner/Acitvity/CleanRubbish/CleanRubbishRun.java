@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.KeyEvent;
 import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.view.animation.TranslateAnimation;
@@ -13,7 +14,7 @@ import android.widget.ImageView;
 import com.example.appcleaner.R;
 
 public class CleanRubbishRun extends AppCompatActivity {
-
+    int isUserBack = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,20 +113,36 @@ public class CleanRubbishRun extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
+
     public void transferCleanRubishFile(){
         try {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent();
-                    intent.setClass(CleanRubbishRun.this, CleanRubbishFile.class);
-                    startActivity(intent);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(isUserBack == 0){
+                                Intent intent = new Intent();
+                                intent.setClass(CleanRubbishRun.this, CleanRubbishFile.class);
+                                startActivity(intent);
+                            }else{
+                                finish();
+                            }
+                        }
+                    },1);
                 }
             },3000);
         }catch (Exception e){
             new Exception(e);
         }
     }
+
     public void runAnimation(){
         eddy();
         click0();

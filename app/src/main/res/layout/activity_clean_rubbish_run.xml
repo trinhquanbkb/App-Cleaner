@@ -35,8 +35,8 @@
                 <ImageView
                     android:id="@+id/imageView37"
                     android:onClick="click0"
-                    android:layout_width="250dp"
-                    android:layout_height="250dp"
+                    android:layout_width="248dp"
+                    android:layout_height="253dp"
                     android:src="@drawable/quet_rac_img_6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.503"

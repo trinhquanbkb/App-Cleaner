@@ -118,25 +118,6 @@ public class BoosterClear extends AppCompatActivity {
         }
     };
 
-    public class ObjectType{
-        private String t;
-
-        public ObjectType(String t) {
-            this.t = t;
-        }
-
-        public ObjectType() {
-        }
-
-        public String getT() {
-            return t;
-        }
-
-        public void setT(String t) {
-            this.t = t;
-        }
-    }
-
     private void handleText() {
         EditText editText = findViewById(R.id.editTextGB);
         //thread là một background thread và không thể thao tác trực tiếp được với view, dữ liệu xử lý ở đây sẽ được đẩy lên UI thread thông qua message
