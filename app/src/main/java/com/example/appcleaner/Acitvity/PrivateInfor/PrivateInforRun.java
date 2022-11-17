@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import com.example.appcleaner.R;
 
 public class PrivateInforRun extends AppCompatActivity {
-
+    int isUserBack = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,12 @@ public class PrivateInforRun extends AppCompatActivity {
     public void clickTwirl(View view) {
         RotateAnimation rotateAnimation = (RotateAnimation) AnimationUtils.loadAnimation(this, R.anim.private_infor);
         view.startAnimation(rotateAnimation);
+    }
+
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
     }
 
     public void click1() {
@@ -127,9 +133,16 @@ public class PrivateInforRun extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent();
-                intent.setClass(PrivateInforRun.this, PrivateInforComplete.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(isUserBack == 0){
+                            Intent intent = new Intent();
+                            intent.setClass(PrivateInforRun.this, PrivateInforComplete.class);
+                            startActivity(intent);
+                        }
+                    }
+                },1);
             }
         },6000);
     }

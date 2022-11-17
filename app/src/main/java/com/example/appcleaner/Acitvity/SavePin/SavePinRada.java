@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import com.example.appcleaner.R;
 
 public class SavePinRada extends AppCompatActivity {
-
+    int isUserBack = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,13 +28,26 @@ public class SavePinRada extends AppCompatActivity {
         view.startAnimation(rotateAnimation);
     }
 
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
+
     public void transferCompleteCPU(){
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent();
-                intent.setClass(SavePinRada.this, SavePinComplete.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(isUserBack == 0){
+                            Intent intent = new Intent();
+                            intent.setClass(SavePinRada.this, SavePinComplete.class);
+                            startActivity(intent);
+                        }
+                    }
+                },1);
             }
         }, 6000);
     }

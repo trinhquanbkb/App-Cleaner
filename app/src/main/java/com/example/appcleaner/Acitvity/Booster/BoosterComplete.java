@@ -11,6 +11,7 @@ import com.example.appcleaner.Acitvity.SavePin.SavePinNotifice;
 import com.example.appcleaner.R;
 
 public class BoosterComplete extends AppCompatActivity {
+    int isUserBack = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +20,27 @@ public class BoosterComplete extends AppCompatActivity {
         transferNotifice();
     }
 
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
+
     public void transferNotifice(){
         try{
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent();
-                    intent.setClass(BoosterComplete.this, BoosterNotifice.class);
-                    startActivity(intent);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(isUserBack == 0){
+                                Intent intent = new Intent();
+                                intent.setClass(BoosterComplete.this, BoosterNotifice.class);
+                                startActivity(intent);
+                            }
+                        }
+                    },1);
                 }
             },2000);
         }catch (Exception e){

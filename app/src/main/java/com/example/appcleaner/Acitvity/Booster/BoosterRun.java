@@ -14,7 +14,7 @@ import android.view.animation.TranslateAnimation;
 import com.example.appcleaner.R;
 
 public class BoosterRun extends AppCompatActivity {
-
+    int isUserBack = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -146,13 +146,26 @@ public class BoosterRun extends AppCompatActivity {
         },4150);
     }
 
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
+
     public void transferClear() {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent();
-                intent.setClass(BoosterRun.this, BoosterClear.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(isUserBack ==0 ){
+                            Intent intent = new Intent();
+                            intent.setClass(BoosterRun.this, BoosterClear.class);
+                            startActivity(intent);
+                        }
+                    }
+                },1);
             }
         }, 4900);
     }

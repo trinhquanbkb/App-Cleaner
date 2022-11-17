@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.example.appcleaner.R;
 
 public class WifiScanRun extends AppCompatActivity {
-
+    int isUserBack = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,13 +73,26 @@ public class WifiScanRun extends AppCompatActivity {
         imageView.startAnimation(rotateAnimation);
     }
 
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
+
     public void transferComplete(){
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent();
-                intent.setClass(WifiScanRun.this, WifiScanComplete.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(isUserBack == 0){
+                            Intent intent = new Intent();
+                            intent.setClass(WifiScanRun.this, WifiScanComplete.class);
+                            startActivity(intent);
+                        }
+                    }
+                },1);
             }
         },15000);
     }

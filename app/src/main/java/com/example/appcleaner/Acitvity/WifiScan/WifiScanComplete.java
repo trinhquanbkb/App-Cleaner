@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import com.example.appcleaner.R;
 
 public class WifiScanComplete extends AppCompatActivity {
-
+    int isUserBack = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,13 +28,26 @@ public class WifiScanComplete extends AppCompatActivity {
         animatorSet.start();
     }
 
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
+
     public void transferNotifice() {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent();
-                intent.setClass(WifiScanComplete.this, WifiScanNotifce.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(isUserBack == 0){
+                            Intent intent = new Intent();
+                            intent.setClass(WifiScanComplete.this, WifiScanNotifce.class);
+                            startActivity(intent);
+                        }
+                    }
+                },1);
             }
         }, 3500);
     }

@@ -12,6 +12,7 @@ import android.view.animation.RotateAnimation;
 import com.example.appcleaner.R;
 
 public class CoolerCPU extends AppCompatActivity {
+    int isUserBack = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +28,28 @@ public class CoolerCPU extends AppCompatActivity {
         RotateAnimation rotateAnimation = (RotateAnimation) AnimationUtils.loadAnimation(this, R.anim.cooler_cpu_1);
         view.startAnimation(rotateAnimation);
     }
+
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
+
     public void clickCpuRada(){
         try {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent();
-                    intent.setClass(CoolerCPU.this, CoolerCPURada.class);
-                    startActivity(intent);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(isUserBack == 0){
+                                Intent intent = new Intent();
+                                intent.setClass(CoolerCPU.this, CoolerCPURada.class);
+                                startActivity(intent);
+                            }
+                        }
+                    },1);
                 }
             },3000);
         }catch (Exception e){

@@ -1,6 +1,5 @@
 package com.example.appcleaner.Acitvity.Booster;
 
-import static androidx.core.content.ContentProviderCompat.requireContext;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,11 +11,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.example.appcleaner.Adapter.RecycleViewAdapterItem;
@@ -31,6 +27,7 @@ public class BoosterClear extends AppCompatActivity {
     private RecyclerView recyclerView;
     int i;
     float n=5;
+    int isUserBack = 0;
     RecycleViewAdapterItem recycleViewAdapterItem;
     LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
     @Override
@@ -100,9 +97,16 @@ public class BoosterClear extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent();
-                intent.setClass(BoosterClear.this, BoosterComplete.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(isUserBack == 0){
+                            Intent intent = new Intent();
+                            intent.setClass(BoosterClear.this, BoosterComplete.class);
+                            startActivity(intent);
+                        }
+                    }
+                },1);
             }
         },6500);
     }
@@ -117,6 +121,12 @@ public class BoosterClear extends AppCompatActivity {
             editText.setText(t+" GB");
         }
     };
+
+    @Override
+    public void onBackPressed() {
+        isUserBack = 1;
+        super.onBackPressed();
+    }
 
     private void handleText() {
         EditText editText = findViewById(R.id.editTextGB);
